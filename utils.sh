@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Function to check if a brew package is installed
-is_installed() {
+is_formulae_installed() {
   brew list --formula | grep -qx "$1"
 }
 
@@ -10,13 +10,13 @@ is_cask_installed() {
 }
 
 # Function to install packages if not already installed
-install_packages() {
-  local packages=("$@")
+install_formulaes() {
+  local formulaes=("$@")
   local to_install=()
 
-  for pkg in "${packages[@]}"; do
-    if ! is_installed "$pkg"; then
-      to_install+=("$pkg")
+  for formulae in "${formulaes[@]}"; do
+    if ! is_installed "$formulae"; then
+      to_install+=("$formulae")
     fi
   done
 
