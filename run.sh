@@ -21,6 +21,11 @@ echo "Updating Homebrew..."
 brew update
 brew upgrade
 
+## Taps
+echo "Tapping Brew..."
+brew tap FelixKratz/formulae
+brew tap koekeishiya/formulae
+
 # Install core formulae by category
 echo "Installing system utilities..."
 install_packages "${SYSTEM_UTILS[@]}"
