@@ -3,6 +3,26 @@
 
 ## Installation
 
+1. Clone this repository:
+
 ```bash
-curl -L https://raw.githubusercontent.com/disintegrating8/mac-scripts/main/start.sh | sh
+git clone https://github.com/disintegrating8/mac-scripts.git
+```
+
+2. go to mac-scripts directory:
+
+```bash
+cd mac-scripts
+```
+
+3. make it executable:
+
+```bash
+chmod +x run.sh
+```
+
+4. Run the setup script:
+
+```bash
+./run.sh
 ```
