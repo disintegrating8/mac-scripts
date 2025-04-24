@@ -3,6 +3,11 @@
 
 ## Installation
 
+0. PlsPLs
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/yourusername/yourrepo/main/bootstrap.sh)"
+```
+  
 1. Clone this repository:
 
 ```bash
