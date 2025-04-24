@@ -37,6 +37,7 @@ fi
 
 # Check if the stow was successful
 if [ $? -eq 0 ]; then
+  source .~/zshrc
   brew services start skhd
   brew services start yabai
   brew services start sketchybar
