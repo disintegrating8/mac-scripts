@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Exit on any error
+set -e
+
+# Source utility functions
+source utils.sh
+
+source packages.conf
+
 echo "Installing Dependencies"
 install_packages "${TILING[@]}"
 install_packages "${FONTS[@]}"
