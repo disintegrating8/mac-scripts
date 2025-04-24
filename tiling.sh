@@ -1,11 +1,5 @@
 echo "Installing Dependencies"
-# Packages
-brew install lua
-brew install switchaudio-osx
-brew install nowplaying-cli
-
-brew tap FelixKratz/formulae
-brew install sketchybar
+install_packages "${TILING[@]}"
 
 curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v2.0.28/sketchybar-app-font.ttf -o $HOME/Library/Fonts/sketchybar-app-font.ttf
 
