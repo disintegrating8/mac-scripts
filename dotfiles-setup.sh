@@ -28,6 +28,7 @@ if [ $? -eq 0 ]; then
   cd "$REPO_NAME"
   echo "Stowing configurations..."
   stow zsh
+  stow p10k
   stow nvim
 else
   echo "Failed to clone the repository."
