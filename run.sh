@@ -37,12 +37,12 @@ echo "Installing tiling setup..."
 install_packages "${TILING[@]}"
 
 echo "Installing casks..."
-install_packages "${CASKS[@]}"
+install_casks "${CASKS[@]}"
 
 echo "Installing media packages..."
-install_packages "${MEDIA[@]}"
+install_casks "${MEDIA[@]}"
 
 echo "Installing fonts..."
-install_packages "${FONTS[@]}"
+install_casks "${FONTS[@]}"
 
 echo "Setup complete!"
