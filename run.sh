@@ -53,7 +53,4 @@ curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v2.0.
 echo "Installing dotfiles"
 . dotfiles-setup.sh
 
-# Delete the cloned repo folder
-rm -rf ~/mac-scripts
-
 echo "Setup complete!"
