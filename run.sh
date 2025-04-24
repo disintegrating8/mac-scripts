@@ -31,7 +31,7 @@ echo "Installing system utilities..."
 install_packages "${SYSTEM_UTILS[@]}"
 
 echo "Installing development tools..."
-install_packages "${DEV_TOOLS[@]}"
+install_packages "${TERMINAL[@]}"
 
 echo "Installing tiling setup..."
 install_packages "${TILING[@]}"
