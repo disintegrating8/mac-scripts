@@ -27,8 +27,8 @@ fi
 if [ $? -eq 0 ]; then
   cd "$REPO_NAME"
   echo "Stowing configurations..."
-  stow zsh
-  stow p10k
+  #stow zsh
+  #stow p10k
   stow kitty
   stow nvim
   stow yabai
@@ -42,7 +42,7 @@ fi
 
 # Check if the stow was successful
 if [ $? -eq 0 ]; then
-  source ~/.zshrc
+  #source ~/.zshrc
   brew services start skhd
   brew services start yabai
   brew services start sketchybar
