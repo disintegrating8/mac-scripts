@@ -34,3 +34,14 @@ else
   echo "Failed to clone the repository."
   exit 1
 fi
+
+# Check if the stow was successful
+if [ $? -eq 0 ]; then
+  brew services start skhd
+  brew services start yabai
+  brew services start sketchybar
+  brew services start borders
+else
+  echo "Failed to create a symlink."
+  exit 1
+fi
