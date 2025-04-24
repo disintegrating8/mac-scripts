@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Clone the repo
+git clone https://github.com/disintegrating8/mac-scripts.git
+cd mac-scripts
+chmod +x run.sh
+./run.sh
+
 # Exit on any error
 set -e
 
@@ -52,5 +58,8 @@ curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v2.0.
 # Run dotfiles-setup
 echo "Installing dotfiles"
 . dotfiles-setup.sh
+
+# Delete the cloned repo folder
+rm -rf ~/mac-scripts
 
 echo "Setup complete!"
