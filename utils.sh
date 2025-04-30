@@ -5,12 +5,12 @@ is_installed() {
   brew list --formula | grep -qx "$1"
 }
 
-# Function to check if a brew cask (GUI app) is installed
+# Function to check if a brew cask is installed
 is_cask_installed() {
   brew list --cask | grep -qx "$1"
 }
 
-# Function to install formula (CLI) packages if not already installed
+# Function to install formula packages if not already installed
 install_packages() {
   local packages=("$@")
   local to_install=()
@@ -29,7 +29,7 @@ install_packages() {
   fi
 }
 
-# Function to install cask (GUI) packages if not already installed
+# Function to install cask packages if not already installed
 install_casks() {
   local casks=("$@")
   local to_install=()

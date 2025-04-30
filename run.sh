@@ -4,7 +4,7 @@
 set -e
 
 # Source utility functions
-source ./utils.sh
+source utils.sh
 
 # Source the package list
 if [ ! -f "packages.conf" ]; then
@@ -12,7 +12,7 @@ if [ ! -f "packages.conf" ]; then
   exit 1
 fi
 
-source ./packages.conf
+source packages.conf
 
 echo "Starting system setup..."
 
